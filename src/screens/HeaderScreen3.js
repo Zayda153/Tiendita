@@ -4,7 +4,7 @@ import {View, ImageBackground, Image, Text} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const HeaderScreen = () => {
+const HeaderScreen3 = () => {
   return (
     <View
       style={{
@@ -21,11 +21,11 @@ const HeaderScreen = () => {
           fontSize: 25,
       
       }}>
-            Productos
+             Carrito
          </Text>
     </View>
     </View>
   );
 };
 
-export default HeaderScreen;
+export default HeaderScreen3;

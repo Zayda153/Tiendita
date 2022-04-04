@@ -21,7 +21,7 @@ const Tab = createMaterialBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator activeColor='#FF00BB' inactiveColor='black' barStyle={{backgroundColor: 'white',
+      <Tab.Navigator activeColor='#FF7F00' inactiveColor='black' barStyle={{backgroundColor: 'white',
       left: 20,
       position: 'absolute',
       right: 20,
@@ -30,30 +30,25 @@ export default function App() {
       justifyContent: 'center',
       alignItems:'center',
       borderRadius: 15,
-    }} initialRouteName="Home" backBehavior='history'>
-        <Tab.Screen name="Home" component={HomeStackScreen}  options={{
+    }} initialRouteName="User" backBehavior='history'>
+        <Tab.Screen name="Categorias" component={HomeStackScreen}  options={{
           tabBarIcon: ({focused})=> (
-              <Icon name="home" size={25} style={{color: focused ? '#88F109' : '#EB1F4F'}}  />
+              <Icon name="align-justify" size={25} style={{color: focused ? '#FF7F00' : '#393D42'}}  />
           ),  
         }}/>
-        <Tab.Screen name="Ranking" component={RankingStackScreen} options={{
+        <Tab.Screen name="Productos" component={RankingStackScreen} options={{
           tabBarIcon: ({focused}) =>(
-            <Icon name='bar-chart-o' size={25} style={{color: focused ? '#88F109' : '#EB1F4F'}}/>
+            <Icon name='tags' size={25} style={{color: focused ? '#FF7F00' : '#393D42'}}/>
           ),
         }} />
-        <Tab.Screen name='Buy' component={MarketStackScreen} options={{
+        <Tab.Screen name='Proveedores' component={MarketStackScreen} options={{
           tabBarIcon: ({focused}) => (
-            <Icon name='shopping-bag' size={25} color='black' style={{color: focused ? '#88F109' : '#EB1F4F'}}/>
+            <Icon name='users' size={25} color='black' style={{color: focused ? '#FF7F00' : '#393D42'}}/>
           ),
         }}/>
-        <Tab.Screen name='User' component={LoginStack} options={{
+        <Tab.Screen name='Carrito' component={SettingsStackScreen} options={{
           tabBarIcon: ({focused}) => (
-            <Icon name='user' size={25} style={{color: focused ? '#88F109' : '#EB1F4F'}}/>
-          ),
-        }}/>
-        <Tab.Screen name='Settings' component={SettingsStackScreen} options={{
-          tabBarIcon: ({focused}) => (
-            <Icon name='gear' size={25} style={{color: focused ? '#88F109' : '#EB1F4F'}} />
+            <Icon name='shopping-cart' size={25} style={{color: focused ? '#FF7F00' : '#393D42'}} />
           ),
         }}/>
       </Tab.Navigator>

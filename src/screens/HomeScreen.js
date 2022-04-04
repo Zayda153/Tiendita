@@ -4,6 +4,7 @@ import HeaderScreen from './HeaderScreen';
 import axios from 'axios';
 import {Button, Card} from 'react-native-elements';
 import baseURL from '../../routes/api';
+import HeaderScreen1 from './HeaderScreen1';
 
 const url = '/api/productos'
 const Item = ({titulo, imagen, descripcion}) => (
@@ -46,7 +47,7 @@ const HomeScreen = () => {
   return (
     <View>
       <View>
-        <HeaderScreen />
+        <HeaderScreen1 />
       </View>
       <FlatList
         style={{marginVertical: '20%'}}
