@@ -31,14 +31,14 @@ export default function App() {
       alignItems:'center',
       borderRadius: 15,
     }} initialRouteName="User" backBehavior='history'>
-        <Tab.Screen name="Categorias" component={HomeStackScreen}  options={{
+        <Tab.Screen name="Productos" component={HomeStackScreen}  options={{
           tabBarIcon: ({focused})=> (
-              <Icon name="align-justify" size={25} style={{color: focused ? '#FF7F00' : '#393D42'}}  />
+              <Icon name="tags" size={25} style={{color: focused ? '#FF7F00' : '#393D42'}}  />
           ),  
         }}/>
-        <Tab.Screen name="Productos" component={RankingStackScreen} options={{
+        <Tab.Screen name="Ventas" component={RankingStackScreen} options={{
           tabBarIcon: ({focused}) =>(
-            <Icon name='tags' size={25} style={{color: focused ? '#FF7F00' : '#393D42'}}/>
+            <Icon name='ticket' size={25} style={{color: focused ? '#FF7F00' : '#393D42'}}/>
           ),
         }} />
         <Tab.Screen name='Proveedores' component={MarketStackScreen} options={{
@@ -46,9 +46,9 @@ export default function App() {
             <Icon name='users' size={25} color='black' style={{color: focused ? '#FF7F00' : '#393D42'}}/>
           ),
         }}/>
-        <Tab.Screen name='Carrito' component={SettingsStackScreen} options={{
+        <Tab.Screen name='Salidas' component={SettingsStackScreen} options={{
           tabBarIcon: ({focused}) => (
-            <Icon name='shopping-cart' size={25} style={{color: focused ? '#FF7F00' : '#393D42'}} />
+            <Icon name="plus" size={25} style={{color: focused ? '#FF7F00' : '#393D42'}} />
           ),
         }}/>
       </Tab.Navigator>

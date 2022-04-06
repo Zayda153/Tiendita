@@ -14,7 +14,7 @@ const MarketScreen = () => {
       <View style={{justifyContent: 'center', alignItems: 'center', flexDirection:'column'}}>
         <View style={{flexDirection: 'row'}}>
           <Card containerStyle={{...styles.cards}}>
-              <Image source={require('../../assets/img/vegetables.png')} style={styles.images} />
+              <Image source={require('../../assets/img/sabritas.png')} style={styles.images} />
               <Button type='clear' title={'Vegetables'} titleStyle={{...styles.buttonText}} buttonStyle={{...styles.buttons}} />
           </Card>
 
